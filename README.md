@@ -7,8 +7,8 @@ SQL injection is a code injection technique that might destroy your database.
 //when i use query it easy to attacker to make sqlinjection <br>
 // assuming $email = ';Drop Table users;-- <br>
 // this sql will be like this  Select * from users WHERE email = ''; Drop Table users;-- <br>
-<h4>$connection->query("SELECT * from users WHERE email = '{$email}'");</h4><br></br>
-<h2>How can I prevent SQL injection in PHP?</h2> <br>
+<h4>$connection->query("SELECT * from users WHERE email = '{$email}'");</h4><br>
+<h2>How can I prevent SQL injection in PHP?</h2> 
 <h4>Use prepared statements and parameterized queries. These are SQL statements that are sent to and parsed by the database server separately from any parameters. This way it is impossible for an attacker to inject malicious SQL 
 //remove this line from code </h4><br>
 <h4>$connection->query("SELECT * from users WHERE email = '{$email}'");</h4><br>
